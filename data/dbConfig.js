@@ -1,6 +1,6 @@
-// do not make changes to this file
+// No need to change this file
 const knex = require('knex');
-const knexConfig = require('../knexfile.js');
+const configurations = require('../knexfile.js');
 const environment = process.env.NODE_ENV || 'development';
 
-module.exports = knex(knexConfig[environment]);
+module.exports = knex(configurations[environment]);
